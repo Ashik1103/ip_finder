@@ -53,7 +53,7 @@ let getLocation2 = async (ip) => {
           Country: ${json.country}
           State: ${json.state_prov}
           City: ${json.city}
-          District: ${json.district}
+          Region: ${json.region}
           Lat / Long: (${json.latitude}, ${json.longitude})
           IP: ${json.ip}
           Postal : ${json.zipcode}
