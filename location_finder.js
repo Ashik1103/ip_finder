@@ -44,13 +44,13 @@ let getLocation = async (ip) => {
 
 
 let getLocation2 = async (ip) => {
-  let url = `https://api.ipgeolocation.io/ipgeo?apiKey=${apiKey}&ip=${ip}`;
+  let url = `pinfo.io/[ip]?token=4d5b04326ec6f0`;
 
   await fetch(url).then((response) =>
     response.json().then((json) => {
       const output = `
           ---------------------
-          Country: ${json.country_name}
+          Country: ${json.country}
           State: ${json.state_prov}
           City: ${json.city}
           District: ${json.district}
