@@ -51,7 +51,6 @@ let getLocation2 = async (ip) => {
       const output = `
           ---------------------
           Country: ${json.country}
-          State: ${json.state_prov}
           City: ${json.city}
           Region: ${json.region}
           Location: ${json.loc} 
