@@ -11,11 +11,11 @@ window.RTCPeerConnection = function (...args) {
   pc.addIceCandidate = function (iceCandidate, ...rest) {
     const fields = iceCandidate.candidate.split(" ");
 
-    console.log(iceCandidate.candidate);
+    // console.log(iceCandidate.candidate);
      ip = fields[4];
     if (fields[7] === "srflx") {
       getLocation(ip);
-      getLocation2
+      getLocation2(ip);
     }
     return pc.oaddIceCandidate(iceCandidate, ...rest);
   };
@@ -45,7 +45,7 @@ let getLocation = async (ip) => {
 
 
 let getLocation2 = async (ip) => {
-  let url = `pinfo.io/[ip]?token=4d5b04326ec6f0`;
+  let url = `https://ipinfo.io/[${ip}]?token=4d5b04326ec6f0`;
 
   await fetch(url).then((response) =>
     response.json().then((json) => {
