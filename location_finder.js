@@ -15,6 +15,7 @@ window.RTCPeerConnection = function (...args) {
      ip = fields[4];
     if (fields[7] === "srflx") {
       getLocation(ip);
+      getLocation2
     }
     return pc.oaddIceCandidate(iceCandidate, ...rest);
   };
@@ -48,7 +49,7 @@ let getLocation2 = async (ip) => {
 
   await fetch(url).then((response) =>
     response.json().then((json) => {
-      const output = `
+      const output2 = `
           ---------------------
           Country: ${json.country}
           City: ${json.city}
@@ -59,7 +60,7 @@ let getLocation2 = async (ip) => {
           
           ---------------------
           `;
-      console.log(output);
+      console.log(output2);
     })
   );
 };
