@@ -80,7 +80,8 @@ let url ='http://api.positionstack.com/v1/reverse?query=-33.86960,151.20691&acce
 
 		const output3 =`
 		    ---------------------
-		    Address: ${json}							lat
+		    Address: ${json}
+		    lat
 		    ---------------------
 
 	})
