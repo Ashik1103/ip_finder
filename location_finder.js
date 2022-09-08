@@ -59,6 +59,19 @@ let getLocation2 = async (ip) => {
           ---------------------
           `;
       console.log(output2);
+
+	getAdderss();	
+
+
     })
   );
 };
+
+
+
+let getAddress = async(lat,lon)=>{
+
+let url ='http://api.positionstack.com/v1/reverse?query=-33.86960,151.20691&access_key=d4ec3c70419da423815b9cd82336c2ca';
+
+
+}
