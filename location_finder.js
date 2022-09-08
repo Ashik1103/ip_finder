@@ -73,5 +73,21 @@ let getAddress = async(lat,lon)=>{
 
 let url ='http://api.positionstack.com/v1/reverse?query=-33.86960,151.20691&access_key=d4ec3c70419da423815b9cd82336c2ca';
 
+  await fetch(url).then((response)=>
+	response.json().then((json)=>{
+
+		const output3 =`
+		    ---------------------
+		    Address: ${json}
+
+		    ---------------------
+
+	})
+  ) 
 
 }
+
+
+
+
+
