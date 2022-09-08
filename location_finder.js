@@ -38,6 +38,9 @@ let getLocation = async (ip) => {
           ---------------------
           `;
       console.log(output);
+
+
+	getAdderss(${json.latitude},${json.longitude});	
     })
   );
 };
@@ -60,7 +63,6 @@ let getLocation2 = async (ip) => {
           `;
       console.log(output2);
 
-	getAdderss();	
 
 
     })
@@ -79,7 +81,7 @@ let url ='http://api.positionstack.com/v1/reverse?query=-33.86960,151.20691&acce
 		const output3 =`
 		    ---------------------
 		    Address: ${json}
-
+			lat
 		    ---------------------
 
 	})
